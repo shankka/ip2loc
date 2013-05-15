@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("ip2loc", "for ip2loc support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("ip2loc", "enable ip2loc support", "no");
+
+if (PHP_IP2LOC != "no") {
+	EXTENSION("ip2loc", "ip2loc.c");
+}
+
