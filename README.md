@@ -20,7 +20,7 @@ var_dump(ip2loc($ip));
  * 适用于脚本中查询多个ip的情况
  */
 $shm = ip2loc_connect();
-ip2loc_get($ip);
+ip2loc_get($ip, $shm);
 ip2loc_close($shm);
 ?&gt;
 </code>
